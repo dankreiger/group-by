@@ -1,0 +1,71 @@
+{
+  "name": "@dankreiger/group-by",
+  "version": "0.1.0",
+  "description": "Normalize an array of objects by a property.",
+  "homepage": "https://github.com/dankreiger/group-by#readme",
+  "bugs": {
+    "url": "https://github.com/dankreiger/group-by/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dankreiger/group-by.git"
+  },
+  "license": "MIT",
+  "author": "Dan Kreiger",
+  "main": "dist/index.js",
+  "module": "dist/group-by.esm.js",
+  "typings": "dist/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "analyze": "size-limit --why",
+    "build": "tsdx build",
+    "lint": "tsdx lint src test",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "start": "tsdx watch",
+    "test": "tsdx test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "@size-limit/webpack-why": "^7.0.8",
+    "husky": "^8.0.1",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.2"
+  },
+  "peerDependencies": {},
+  "engines": {
+    "node": ">=16"
+  },
+  "publishConfig": {
+    "@dankreiger:registry": "https://npm.pkg.github.com"
+  },
+  "size-limit": [
+    {
+      "path": "dist/group-by.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/group-by.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}
