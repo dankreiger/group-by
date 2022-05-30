@@ -27,6 +27,7 @@
     "build": "tsdx build",
     "lint": "tsdx lint src test",
     "prepare": "tsdx build",
+    "semantic-release": "semantic-release",
     "size": "size-limit",
     "start": "tsdx watch",
     "test": "tsdx test"
@@ -36,13 +37,11 @@
       "pre-commit": "tsdx lint"
     }
   },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.4",
+    "@semantic-release/npm": "^9.0.1",
     "@size-limit/preset-small-lib": "7.0.8",
     "@size-limit/webpack-why": "7.0.8",
     "husky": "8.0.1",
@@ -56,7 +55,8 @@
     "node": ">=16"
   },
   "publishConfig": {
-    "@dankreiger:registry": "https://npm.pkg.github.com"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "size-limit": [
     {
