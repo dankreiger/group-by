@@ -1,6 +1,6 @@
 {
   "name": "@dankreiger/group-by",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Normalize an array of objects by a property.",
   "homepage": "https://github.com/dankreiger/group-by#readme",
   "bugs": {
