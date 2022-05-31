@@ -1,19 +1,19 @@
 {
-  "name": "@dankreiger/group-by",
+  "name": "@dankreiger/groop",
   "version": "0.1.1",
   "description": "Normalize an array of objects by a property.",
-  "homepage": "https://github.com/dankreiger/group-by#readme",
+  "homepage": "https://github.com/dankreiger/groop#readme",
   "bugs": {
-    "url": "https://github.com/dankreiger/group-by/issues"
+    "url": "https://github.com/dankreiger/groop/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dankreiger/group-by.git"
+    "url": "git+https://github.com/dankreiger/groop.git"
   },
   "license": "MIT",
   "author": "Dan Kreiger",
   "main": "dist/index.js",
-  "module": "dist/group-by.esm.js",
+  "module": "dist/groop.esm.js",
   "typings": "dist/index.d.ts",
   "directories": {
     "test": "test"
@@ -61,11 +61,11 @@
   },
   "size-limit": [
     {
-      "path": "dist/group-by.cjs.production.min.js",
+      "path": "dist/groop.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/group-by.esm.js",
+      "path": "dist/groop.esm.js",
       "limit": "10 KB"
     }
   ]

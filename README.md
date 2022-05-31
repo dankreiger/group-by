@@ -1,11 +1,11 @@
-# group-by
+# groop
 
 Normalize an array of objects by a property.
 
 ## Usage
 
 ```ts
-import { groupBy } from '@dankreiger/group-by';
+import { groupBy } from '@dankreiger/groop';
 
 groupBy('id', [
   { id: 3, name: 'Dan' },
