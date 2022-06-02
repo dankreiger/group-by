@@ -1,7 +1,7 @@
 type ObjectKey = string | number | symbol;
 
 export type EntityDict<E> = {
-  entities: Record<keyof E, E> | {};
+  entities: Record<keyof E, E> | Record<never, undefined>;
   ids: (keyof E)[];
 };
 
@@ -28,7 +28,9 @@ const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
   );
 
 export function createGroup<K extends ObjectKey>(key: K) {
-  return function groupList<T extends Record<K, T[K]>>(items: T[]): EntityDict<T> {
+  return function groupList<T extends Record<K, T[K]>>(
+    items: T[]
+  ): EntityDict<T> {
     return groupBy(key, items);
   };
 }
