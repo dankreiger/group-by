@@ -1,9 +1,11 @@
-type Dict<E> = {
+type ObjectKey = string | number | symbol;
+
+export type Dict<E> = {
   entities: Record<keyof E, E> | {};
   ids: (keyof E)[];
 };
 
-export const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
+const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
   key: K,
   items: T[]
 ) =>
@@ -12,9 +14,15 @@ export const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
       ...result,
       entities: {
         ...result.entities,
-        [item[key]]: [...(result[item[key]] || []), item],
+        [item[key]]: [...(result.entities[item[key]] || []), item],
       },
       ids: (result.ids || []).concat([item[key]]),
     }),
     { entities: {}, ids: [] }
   );
+
+export function createGroup<K extends ObjectKey>(key: K) {
+  return function groupList<T extends Record<K, T[K]>>(items: T[]): Dict<T> {
+    return groupBy(key, items);
+  };
+}
