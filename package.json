@@ -89,12 +89,16 @@
   },
   "size-limit": [
     {
-      "path": "dist/groop.cjs.production.min.js",
-      "limit": "10 KB"
+      "path": "dist/es/index.js",
+      "limit": "1 KB"
     },
     {
-      "path": "dist/groop.esm.js",
-      "limit": "10 KB"
+      "path": "dist/cjs/index.js",
+      "limit": "1 KB"
+    },
+    {
+      "path": "dist/index.js",
+      "limit": "4 KB"
     }
   ]
 }
