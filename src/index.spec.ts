@@ -34,7 +34,7 @@ describe('createGroup', () => {
           },
         ],
       },
-      ids: [5, 5, 22, 20],
+      ids: [5, 22, 20],
     });
   });
 
@@ -65,7 +65,7 @@ describe('createGroup', () => {
           },
         ],
       },
-      ids: ['Dan', 'Puppy', 'Woofer', 'Dan'],
+      ids: ['Dan', 'Puppy', 'Woofer'],
     });
   });
 });
