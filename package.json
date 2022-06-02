@@ -1,6 +1,6 @@
 {
   "name": "@dankreiger/groop",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Normalize an array of objects by a property.",
   "homepage": "https://github.com/dankreiger/groop#readme",
   "bugs": {
