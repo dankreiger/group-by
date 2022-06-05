@@ -19,7 +19,7 @@ const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
 export function createGroup<K extends ObjectKey>(key: K) {
   return function groupList<T extends Record<K, T[K]>>(
     items: T[]
-  ): EntityDict<T> {
+  ): EntityDict<T, T[K]> {
     return groupBy(key, items);
   };
 }
