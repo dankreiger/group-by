@@ -4,7 +4,7 @@ const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
   key: K,
   items: T[]
 ) =>
-  items.reduce<EntityDict<T>>(
+  items.reduce<EntityDict<T, T[K]>>(
     (result, item) => ({
       ...result,
       entities: {
