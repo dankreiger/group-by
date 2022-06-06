@@ -5,21 +5,46 @@ Normalize an array of objects by a property.
 ## Usage
 
 ```ts
-import { groupBy } from '@dankreiger/groop';
+import { createGroup } from '@dankreiger/groop';
 
-groupBy('id', [
-  { id: 3, name: 'Dan' },
-  { id: 2, name: 'Puppy' },
-  { id: 3, name: 'woofer' },
-]);
+const listGroup = [
+  { name: 'Dan', age: 5 },
+  { name: 'Puppy', age: 5 },
+  { name: 'Woofer', age: 22 },
+  { name: 'Dan', age: 20 },
+];
 
-/** yields:
+const byAge = createGroup('age');
+
+byAge(listGroup);
+
+/** yields **/
+
 {
   entities: {
-    '2': [{ id: 2, name: 'Puppy' }],
-    '3': [{ id: 3, name: 'woofer' }],
+    '20': [
+      {
+        age: 20,
+        name: 'Dan',
+      },
+    ],
+    '22': [
+      {
+        age: 22,
+        name: 'Woofer',
+      },
+    ],
+    '5': [
+      {
+        age: 5,
+        name: 'Dan',
+      },
+      {
+        age: 5,
+        name: 'Puppy',
+      },
+    ],
   },
-  ids: [3, 2, 3],
+  ids: [5, 22, 20],
 }
-*/
 ```
