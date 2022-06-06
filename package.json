@@ -1,6 +1,6 @@
 {
   "name": "@dankreiger/groop",
-  "version": "0.1.19",
+  "version": "0.1.21",
   "description": "Normalize an array of objects by a property.",
   "homepage": "https://github.com/dankreiger/groop#readme",
   "bugs": {
@@ -52,10 +52,10 @@
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-typescript": "^7.17.12",
     "@babel/runtime": "^7.18.3",
+    "@commitlint/config-conventional": "^17.0.2",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
-    "@commitlint/config-conventional": "^17.0.2",
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.4",
