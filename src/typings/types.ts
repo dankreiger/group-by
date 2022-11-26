@@ -1,6 +1,6 @@
 export type ObjectKey = string | number | symbol;
 
-export type EntityDict<E, Key extends ObjectKey> = {
-  entities: Record<Key, E>;
+export type EntityDict<Entity, Key extends ObjectKey> = {
+  entities: Record<Key, Entity | undefined>;
   ids: Key[];
 };
