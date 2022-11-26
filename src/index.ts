@@ -1,4 +1,4 @@
-import { Dict, EntityDict, ObjectKey } from './types';
+import { EntityDict, ObjectKey } from './types';
 
 const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
   key: K,
@@ -9,7 +9,7 @@ const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
       ...result,
       entities: {
         ...result.entities,
-        [item[key]]: [...(result.entities[item[key]] || []), item],
+        [item[key]]: [result.entities[item[key]] || [], item].flat(),
       },
       ids: [...new Set((result.ids || []).concat([item[key]]))],
     }),
@@ -24,4 +24,4 @@ export function createGroup<K extends ObjectKey>(key: K) {
   };
 }
 
-export { EntityDict, Dict };
+export { EntityDict };
