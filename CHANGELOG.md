@@ -1,3 +1,10 @@
+## [0.1.24](https://github.com/dankreiger/groop/compare/v0.1.23...v0.1.24) (2022-11-26)
+
+
+### Bug Fixes
+
+* update node for build and other ci scripts ([#64](https://github.com/dankreiger/groop/issues/64)) ([a3ef572](https://github.com/dankreiger/groop/commit/a3ef572f4b8d36f809fe8463894ae3e55037cb81))
+
 ## [0.1.23](https://github.com/dankreiger/groop/compare/v0.1.22...v0.1.23) (2022-11-26)
 
 
