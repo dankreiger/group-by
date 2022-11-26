@@ -40,10 +40,10 @@
   },
   "lint-staged": {
     "packages/**/src/*.{js,ts,tsx,jsx,json,css}": [
-      "yarn sort-package-json && prettier --single-quote --write"
+      "npx sort-package-json && prettier --single-quote --write"
     ],
     "*.{md,mdx,yml}": [
-      "yarn sort && prettier --write"
+      "npx sort-package-json && prettier --write"
     ]
   },
   "devDependencies": {
