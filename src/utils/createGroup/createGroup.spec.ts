@@ -1,4 +1,4 @@
-import { createGroup } from '.';
+import { createGroup } from './createGroup';
 
 const listGroup = [
   { name: 'Dan', age: 5 },
