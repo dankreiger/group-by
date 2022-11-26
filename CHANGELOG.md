@@ -1,3 +1,10 @@
+## [0.1.25](https://github.com/dankreiger/groop/compare/v0.1.24...v0.1.25) (2022-11-26)
+
+
+### Bug Fixes
+
+* update release config ([#75](https://github.com/dankreiger/groop/issues/75)) ([d3104ed](https://github.com/dankreiger/groop/commit/d3104ed6b1d44c68d8d7d93082f7931c9d5901f9))
+
 ## [0.1.24](https://github.com/dankreiger/groop/compare/v0.1.23...v0.1.24) (2022-11-26)
 
 
