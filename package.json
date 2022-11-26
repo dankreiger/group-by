@@ -24,16 +24,15 @@
     "src"
   ],
   "scripts": {
-    "analyze": "scripty",
     "build": "scripty",
     "clean": "scripty",
     "commit": "scripty",
+    "commit:protect": "scripty",
     "format": "scripty",
     "lint": "scripty",
-    "prepare": "scripty",
-    "protect": "scripty",
     "release": "scripty",
     "size": "scripty",
+    "size:analyze": "scripty",
     "test": "scripty"
   },
   "config": {
@@ -58,11 +57,12 @@
     "@semantic-release/github": "8.0.6",
     "@semantic-release/npm": "9.0.1",
     "@size-limit/preset-small-lib": "8.1.0",
-    "@size-limit/webpack": "8.1.0",
+    "@size-limit/webpack": "^8.1.0",
+    "@size-limit/webpack-why": "^8.1.0",
     "@types/jest": "28.1.8",
     "@types/node": "18.11.9",
-    "@typescript-eslint/eslint-plugin": "5.44.0",
-    "@typescript-eslint/parser": "5.44.0",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
     "commitizen": "4.2.5",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.28.0",
@@ -85,9 +85,6 @@
     "tslib": "2.4.0",
     "typescript": "4.9.3"
   },
-  "engines": {
-    "node": ">=18"
-  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
@@ -100,10 +97,6 @@
     {
       "path": "dist/cjs/index.js",
       "limit": "1 KB"
-    },
-    {
-      "path": "dist/index.js",
-      "limit": "4 KB"
     }
   ]
 }

@@ -1,15 +1,21 @@
 name: Pull Request
 on: [pull_request]
 jobs:
-  size:
+  pull_request:
     runs-on: ubuntu-latest
     env:
       CI_JOB_NUMBER: 1
     steps:
       - uses: actions/checkout@v3
-      - name: Install deps and build (with cache)
+      - name: Install deps (with cache)
         uses: bahmutov/npm-install@v1
       - name: Lint
         run: npm run lint
       - name: Test
         run: npm run test --ci --coverage --maxWorkers=2
+      - name: Build
+        run: npm run build
+      - name: size-limit-action
+        uses: andresz1/size-limit-action@v1.7.0
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
