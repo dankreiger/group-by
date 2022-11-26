@@ -1,3 +1,10 @@
+## [0.1.26](https://github.com/dankreiger/groop/compare/v0.1.25...v0.1.26) (2022-11-26)
+
+
+### Features
+
+* **types:** make type more accurate ([#76](https://github.com/dankreiger/groop/issues/76)) ([62ebebf](https://github.com/dankreiger/groop/commit/62ebebf27993a42acc4c1f4ad7c4230d3fced190))
+
 ## [0.1.25](https://github.com/dankreiger/groop/compare/v0.1.24...v0.1.25) (2022-11-26)
 
 
