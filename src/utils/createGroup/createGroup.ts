@@ -1,5 +1,5 @@
 import type { EntityDict, ObjectKey } from '../../typings';
-import { groupBy } from '../_internal';
+import { groupBy } from '../__internal__';
 
 export function createGroup<K extends ObjectKey>(key: K) {
   return function groupList<T extends Record<K, T[K]>>(

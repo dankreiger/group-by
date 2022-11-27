@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-source ./scripts/shared.sh
 
-echo "┏━━━ 🛍️ $PACKAGE_NAME size:analyze ━━━━━━━"
+echo "┏━━━ 🛍️ size:analyze ━━━━━━━"
 size-limit --why

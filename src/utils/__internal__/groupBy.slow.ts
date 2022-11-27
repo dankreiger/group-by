@@ -1,6 +1,9 @@
 import type { EntityDict } from '../../typings';
 
-export const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
+/**
+ * O(n^2) implementation of groupBy
+ */
+export const groupBySlow = <K extends keyof T, T extends Record<K, T[K]>>(
   key: K,
   items: T[]
 ) =>
