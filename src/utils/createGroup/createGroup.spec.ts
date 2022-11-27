@@ -6,10 +6,11 @@ const listGroup = [
   { name: 'Woofer', age: 22 },
   { name: 'Dan', age: 20 },
 ];
+
 describe('createGroup', () => {
   it('one', () => {
-    const byId = createGroup('age');
-    expect(byId(listGroup)).toEqual({
+    const byAge = createGroup('age');
+    expect(byAge(listGroup)).toEqual({
       entities: {
         '20': [
           {

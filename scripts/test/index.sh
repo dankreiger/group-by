@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-npx jest
+npx jest --runInBand --coverage --verbose --forceExit --detectOpenHandles

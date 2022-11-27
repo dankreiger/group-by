@@ -33,7 +33,9 @@
     "release": "scripty",
     "size": "scripty",
     "size:analyze": "scripty",
-    "test": "scripty"
+    "test": "scripty",
+    "test:ci": "scripty",
+    "test:watch": "scripty"
   },
   "config": {
     "commitizen": {
