@@ -1,3 +1,10 @@
+## [0.1.27](https://github.com/dankreiger/groop/compare/v0.1.26...v0.1.27) (2022-11-27)
+
+
+### Features
+
+* **perf:** up performance from quadratic to linear time ([#77](https://github.com/dankreiger/groop/issues/77)) ([6277380](https://github.com/dankreiger/groop/commit/62773806bf307434234319a225610aec9ed84bd1))
+
 ## [0.1.26](https://github.com/dankreiger/groop/compare/v0.1.25...v0.1.26) (2022-11-26)
 
 
