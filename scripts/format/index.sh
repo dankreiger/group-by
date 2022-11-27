@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
 echo "┏━━━ format  ━━━━━━━━━━━━━━━━━━━"
-npx sort-package-json && npx prettier src --single-quote --write
+sort-package-json && prettier src --single-quote --write
