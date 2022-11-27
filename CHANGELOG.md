@@ -1,3 +1,10 @@
+## [0.1.28](https://github.com/dankreiger/groop/compare/v0.1.27...v0.1.28) (2022-11-27)
+
+
+### Features
+
+* **types:** export types ([#79](https://github.com/dankreiger/groop/issues/79)) ([eb64699](https://github.com/dankreiger/groop/commit/eb646991e6e979f628209ad4666bd7d15c34cdea))
+
 ## [0.1.27](https://github.com/dankreiger/groop/compare/v0.1.26...v0.1.27) (2022-11-27)
 
 
