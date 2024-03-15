@@ -3,4 +3,4 @@
 
 npm run clean
 echo "┏━━━ 📦 build ━━━━━━━━━━━━━━━━━━━"
-tsc && rollup -c
+npx tsc && rollup -c
