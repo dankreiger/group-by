@@ -24,7 +24,7 @@
     "src"
   ],
   "scripts": {
-    "build": "scripty",
+    "build": "npm run clean && npx tsc && npx rollup -c",
     "clean": "scripty",
     "commit": "scripty",
     "commit:protect": "scripty",
