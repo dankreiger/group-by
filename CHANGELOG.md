@@ -1,3 +1,10 @@
+## [0.1.32](https://github.com/dankreiger/groop/compare/v0.1.31...v0.1.32) (2024-04-11)
+
+
+### Bug Fixes
+
+* make it support arrays and objects ([#157](https://github.com/dankreiger/groop/issues/157)) ([0ba0b2a](https://github.com/dankreiger/groop/commit/0ba0b2ad0ff58c541b7eba8eeb7b572bda6a7487))
+
 ## [0.1.31](https://github.com/dankreiger/groop/compare/v0.1.30...v0.1.31) (2024-04-11)
 
 
