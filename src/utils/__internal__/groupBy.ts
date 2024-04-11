@@ -5,7 +5,7 @@ import type { MutableEntityDict } from '../../typings';
  */
 export const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
   key: K,
-  items: T[]
+  items: ReadonlyArray<T>
 ) => {
   const result = { entities: {}, ids: [] } as MutableEntityDict<T, T[K]>;
 
