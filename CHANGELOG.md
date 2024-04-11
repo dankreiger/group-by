@@ -1,3 +1,10 @@
+## [0.1.31](https://github.com/dankreiger/groop/compare/v0.1.30...v0.1.31) (2024-04-11)
+
+
+### Bug Fixes
+
+* make first input into a readonly array ([#156](https://github.com/dankreiger/groop/issues/156)) ([8efb1f1](https://github.com/dankreiger/groop/commit/8efb1f1040c75be1610d64525f170f37de6fdb8b))
+
 ## [0.1.30](https://github.com/dankreiger/groop/compare/v0.1.29...v0.1.30) (2024-04-11)
 
 
