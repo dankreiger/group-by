@@ -1,13 +1,13 @@
-import type { MutableEntityDict } from '../../typings';
+import { ArrayEntityDict, MutableArrayEntityDict } from '../../../typings';
 
 /**
  * O(n) implementation of groupBy
  */
-export const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
+export const groupArrayBy = <K extends keyof T, T extends Record<K, T[K]>>(
   key: K,
   items: ReadonlyArray<T>
 ) => {
-  const result = { entities: {}, ids: [] } as MutableEntityDict<T, T[K]>;
+  const result = { entities: {}, ids: [] } as MutableArrayEntityDict<T, T[K]>;
 
   for (let i = 0; i < items.length; i++) {
     if (result.entities[items[i][key]]) {
@@ -19,5 +19,5 @@ export const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
     }
   }
 
-  return result;
+  return result as unknown as ArrayEntityDict<T, T[K]>;
 };

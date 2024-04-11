@@ -6,3 +6,4 @@ coverage
 jest.config.ts
 rollup.config.ts
 docs
+tsup.config.ts

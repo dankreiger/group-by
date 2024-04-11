@@ -1,9 +1,7 @@
-
-   
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "es2015",
+    "module": "ES2015",
     "declarationDir": "./dist/types",
     "moduleResolution": "node",
     "esModuleInterop": true,

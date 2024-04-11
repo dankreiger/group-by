@@ -1,2 +1,2 @@
-export { EntityDict } from './typings';
+export { ArrayEntityDict, EntityDict } from './typings';
 export * from './utils';
