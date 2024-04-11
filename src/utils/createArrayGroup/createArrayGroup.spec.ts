@@ -1,4 +1,4 @@
-import { createArrayGroup } from '../createArrayGroup';
+import { createArrayGroup } from './createArrayGroup';
 
 const listGroup = [
   { name: 'Dan', age: 5 },

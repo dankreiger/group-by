@@ -2,10 +2,12 @@
 
 Normalize an array of objects by a property.
 
+Both lists and single objects can be normalized.
+
 ## Usage
 
 ```ts
-import { createGroup } from '@dankreiger/groop';
+import { createArrayGroup } from '@dankreiger/groop';
 
 const listGroup = [
   { name: 'Dan', age: 5 },
@@ -14,7 +16,7 @@ const listGroup = [
   { name: 'Dan', age: 20 },
 ];
 
-const byAge = createGroup('age');
+const byAge = createArrayGroup('age');
 
 byAge(listGroup);
 /**
@@ -47,7 +49,7 @@ byAge(listGroup);
  *  }
  */
 
-const byName = createGroup('name');
+const byName = createArrayGroup('name');
 
 byName(listGroup);
 
@@ -63,5 +65,37 @@ byName(listGroup);
  *   },
  *   ids: [ 'Dan', 'Puppy', 'Woofer' ]
  *  }
+ */
+```
+
+```ts
+import { createGroup } from '@dankreiger/groop';
+
+const singleGroup = { name: 'Dan', age: 5 };
+
+const byAge = createGroup('age');
+
+byAge(singleGroup);
+
+/**
+ * {
+ *   entities: {
+ *     '5': { name: 'Dan', age: 5 }
+ *   },
+ *   ids: [5]
+ * }
+ */
+
+const byName = createGroup('name');
+
+byName(singleGroup);
+
+/**
+ * {
+ *   entities: {
+ *     Dan: { name: 'Dan', age: 5 }
+ *   },
+ *   ids: ['Dan']
+ * }
  */
 ```
