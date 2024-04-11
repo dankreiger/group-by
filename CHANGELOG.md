@@ -1,3 +1,10 @@
+## [0.1.29](https://github.com/dankreiger/groop/compare/v0.1.28...v0.1.29) (2024-04-11)
+
+
+### Bug Fixes
+
+* make arrays readonly ([#154](https://github.com/dankreiger/groop/issues/154)) ([a47054a](https://github.com/dankreiger/groop/commit/a47054adc62260e89006d2c3825250da02dc0ea5))
+
 ## [0.1.28](https://github.com/dankreiger/groop/compare/v0.1.27...v0.1.28) (2022-11-27)
 
 
