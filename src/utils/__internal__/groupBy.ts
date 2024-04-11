@@ -11,7 +11,8 @@ export const groupBy = <K extends keyof T, T extends Record<K, T[K]>>(
 
   for (let i = 0; i < items.length; i++) {
     if (result.entities[items[i][key]]) {
-      result.entities[items[i][key]]?.push(items[i]);
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      result.entities[items[i][key]]!.push(items[i]);
     } else {
       result.entities[items[i][key]] = [items[i]];
       result.ids.push(items[i][key]);
