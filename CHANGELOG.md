@@ -1,3 +1,10 @@
+## [0.1.30](https://github.com/dankreiger/groop/compare/v0.1.29...v0.1.30) (2024-04-11)
+
+
+### Bug Fixes
+
+* export entitydict type ([#155](https://github.com/dankreiger/groop/issues/155)) ([e768a25](https://github.com/dankreiger/groop/commit/e768a25d9c5bd0a0918e2ef88905982e6f033e2b))
+
 ## [0.1.29](https://github.com/dankreiger/groop/compare/v0.1.28...v0.1.29) (2024-04-11)
 
 
